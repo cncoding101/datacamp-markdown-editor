@@ -1,7 +1,13 @@
 import '@styles/global.css';
+import Layout from '@components/templates/layout';
+import MarkdownProvider from 'providers/markdown-provider';
 
 const App: React.FC = () => {
-  return <div>Hello world!</div>;
+  return (
+    <MarkdownProvider>
+      <Layout></Layout>
+    </MarkdownProvider>
+  );
 };
 
 export default App;

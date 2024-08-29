@@ -11,6 +11,12 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
       },
+      colors: {
+        dark: '#22303c',
+        darker: '#192734',
+        darkest: '#15202b',
+        contrast: '#8899ac',
+      },
     },
   },
   plugins: [],
