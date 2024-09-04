@@ -1,12 +1,11 @@
-import { useState, ChangeEvent } from 'react';
+import { ChangeEvent } from 'react';
 import TitleBar from '@components/molecules/title-bar';
 import { useMarkdown } from 'providers/markdown-provider';
 import './style.css';
 
 const Editor: React.FC = () => {
-  const [markdown, setMarkdown] = useMarkdown();
-  const [words, setWords] = useState<number>(0);
-  const [chars, setChars] = useState<number>(0);
+  const { markdown, setMarkdown, words, setWords, chars, setChars } = useMarkdown();
+  console.log('what is markdwon', markdown);
 
   const getWordsCount = (str: string): number => {
     const matches = str.match(/(\w+)/g);

@@ -4,7 +4,7 @@ import { useMarkdown } from 'providers/markdown-provider';
 import './style.css';
 
 const Preview = () => {
-  const [markdown] = useMarkdown();
+  const { markdown } = useMarkdown();
 
   return (
     <div className='preview'>
