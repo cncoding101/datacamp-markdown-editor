@@ -5,7 +5,6 @@ import './style.css';
 
 const Editor: React.FC = () => {
   const { markdown, setMarkdown, words, setWords, chars, setChars } = useMarkdown();
-  console.log('what is markdwon', markdown);
 
   const getWordsCount = (str: string): number => {
     const matches = str.match(/(\w+)/g);
