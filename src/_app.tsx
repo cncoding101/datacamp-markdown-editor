@@ -1,5 +1,5 @@
 import '@styles/global.css';
-import Layout from '@components/templates/layout';
+import Layout from '@components/templates/default-layout';
 import MarkdownProvider from 'providers/markdown-provider';
 
 const App: React.FC = () => {

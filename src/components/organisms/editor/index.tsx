@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 import TitleBar from '@components/molecules/title-bar';
-import { useMarkdown } from 'providers/markdown-provider';
+import { useMarkdown } from '@providers/markdown-provider';
 import './style.css';
 
 const Editor: React.FC = () => {

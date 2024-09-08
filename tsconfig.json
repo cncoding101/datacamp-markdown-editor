@@ -4,6 +4,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "types": ["vitest/globals"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,10 +21,18 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
+      "@providers/*": ["providers/*"],
       "@contexts/*": ["contexts/*"],
       "@styles/*": ["styles/*"]
     }
   },
-  "include": ["src", "tailwind.config.ts", "vite.config.ts"],
+  "include": [
+    "src",
+    "tailwind.config.ts",
+    "vite.config.ts",
+    "vitest-setup.ts",
+    "vitest.config.ts",
+    "src/components/atoms/text/.test.ts"
+  ],
   "exclude": ["node_modules"]
 }
