@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Preview from '@components/organisms/preview';
 import MarkdownProvider, { useMarkdown } from '@providers/markdown-provider';
+import { useNavigate } from 'react-router-dom';
 
 vi.mock('@providers/markdown-provider', async (importOriginal) => {
   // Import the original module
@@ -15,6 +16,12 @@ vi.mock('@providers/markdown-provider', async (importOriginal) => {
       chars: 0,
       setChars: vi.fn(),
     }),
+  };
+});
+
+vi.mock('react-router-dom', async (importOriginal) => {
+  return {
+    useNavigate: vi.fn(),
   };
 });
 

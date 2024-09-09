@@ -5,7 +5,7 @@ import tailwindcss from 'tailwindcss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [tsconfigPaths(), react()],
   css: {
     postcss: {
       plugins: [tailwindcss()],

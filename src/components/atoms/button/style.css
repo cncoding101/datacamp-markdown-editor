@@ -1,0 +1,23 @@
+/* Buttons */
+.btn {
+  --button-bg: white;
+  --border-bg: white;
+  --text-color: var(--darkest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 2px solid var(--border-bg);
+  transition: 0.2s opacity;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  border-radius: 0.8125rem;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.9;
+}

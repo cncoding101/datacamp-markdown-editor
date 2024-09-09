@@ -1,9 +1,10 @@
 import ReactMarkdown from 'react-markdown';
 import TitleBar from '@components/molecules/title-bar';
 import { useMarkdown } from '@providers/markdown-provider';
+
 import './style.css';
 
-const Preview = () => {
+const PreviewOrganism = () => {
   const { markdown } = useMarkdown();
 
   return (
@@ -16,4 +17,4 @@ const Preview = () => {
   );
 };
 
-export default Preview;
+export default PreviewOrganism;
